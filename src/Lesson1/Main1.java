@@ -2,6 +2,8 @@ package Lesson1;
 
 public class Main1 {
     public static void main(String[] args) {
+
+//        добавить описание задач
 //        System.out.println("3\n2\n1\nПоехали!");
 //
 //        System.out.println("____888888______________________________\n" +

@@ -18,9 +18,10 @@ public class HomeWork3 {
         int a = 50;
         int b = 15;
 
-        if (a==b) {
+        if (a == b) {
             System.out.println("a == b");
-        } else if (a<b) {
+
+        } else if (a < b) {
             System.out.println("a < b");
         }
         else {
@@ -43,6 +44,7 @@ public class HomeWork3 {
         if (sum % 2 == 0)
         {
             System.out.println("maybe a and b are even");
+
         } else if (sum % 2 != 0 ) {
             System.out.println("some variable is odd");
         }
@@ -62,12 +64,10 @@ public class HomeWork3 {
         int d  = 41;
 
         if (d > 10) {
-
             System.out.println("больше 10");
         }
 
         if (d < 100) {
-
             System.out.println("меньше 100");
         }
 
@@ -76,11 +76,9 @@ public class HomeWork3 {
         }
 
         if (d >= 5 && d <= 40) {
-
             System.out.println("значение переменной между 5 и 40 включительно");
 
         } else {
-
             System.out.println("значение переменной меньше 5 или больше 40");
         }
 

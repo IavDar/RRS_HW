@@ -1,4 +1,4 @@
-package Lesson3_Boolean.HW3;
+package Lesson_3_Boolean_if.HW3;
 
 public class HomeWork3 {
 

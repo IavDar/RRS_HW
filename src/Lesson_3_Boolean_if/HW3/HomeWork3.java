@@ -81,6 +81,5 @@ public class HomeWork3 {
         } else {
             System.out.println("значение переменной меньше 5 или больше 40");
         }
-
     }
 }

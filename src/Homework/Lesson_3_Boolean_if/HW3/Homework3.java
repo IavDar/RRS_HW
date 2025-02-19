@@ -1,6 +1,6 @@
-package Lesson_3_Boolean_if.HW3;
+package Homework.Lesson_3_Boolean_if.HW3;
 
-public class HomeWork3 {
+public class Homework3 {
 
     public static void main(String[] args) {
 

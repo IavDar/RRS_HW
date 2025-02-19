@@ -1,6 +1,6 @@
-package Lesson_2_Variables;
+package Homework.Lesson_2_Variables;
 
-public class HomeWork2 {
+public class Homework2 {
     public static void main(String[] args) {
 
 

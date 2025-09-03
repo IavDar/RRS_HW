@@ -15,10 +15,14 @@ public class Task7 {
         for (int j : matchbox) {
             sum += j;
         }
-        avg = (double) sum / matchbox.length;
-        System.out.println("average number: " + avg);
+        avg = (double) sum / matchbox.length; // sum * 1.0 вариант приведения к double
+
+        System.out.println("Average number of matches: " + avg);
+
+        System.out.println("Boxes where number of matches differs from average by more than 3: ");
+
         for (int j : matchbox) {
-            if (j < avg - 3 || j > avg + 3) {  // if (Math.abs(j - avg) > 3)   // Math.abs() возвращает модуль числа
+            if ((Math.abs(avg - j ) > 3)) {  // Math.abs() возвращает модуль числа (j < avg - 3 || j > avg + 3)
                 System.out.print(j + " ");
             }
         }

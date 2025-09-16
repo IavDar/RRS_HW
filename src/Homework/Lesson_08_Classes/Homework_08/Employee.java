@@ -1,7 +1,5 @@
 package Homework.Lesson_08_Classes.Homework_08;
 
-import java.math.BigDecimal;
-
 public class Employee {
     private String name;
     private double monthSalary;

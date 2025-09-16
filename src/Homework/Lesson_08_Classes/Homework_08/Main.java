@@ -19,5 +19,13 @@ public class Main {
         for (TaxPayment tax : taxes) {
             System.out.println(tax.getName() + " должен(на) заплатить налог: " + + tax.getTaxAmount());
         }
+
+        System.out.println("Task3");
+        System.out.println("Сумма зарплат всех сотрудников: " + Salary.getSum(employees));
+
+        System.out.println("Task4");
+        int word = 643;
+        System.out.println(word + " ---> " + Task04.numberToWords(word));
+
     }
 }

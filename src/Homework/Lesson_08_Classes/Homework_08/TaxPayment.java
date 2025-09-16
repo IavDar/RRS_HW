@@ -34,7 +34,12 @@ public class TaxPayment {
 
 
         for (int i = 0; i < employees.length; i++) {
+
             Employee emp = employees[i];
+
+            if (emp == null) {
+                throw new IllegalArgumentException("Работник под индексом " + i + " is null");
+            }
 
             double taxableSalary = Math.max(0, emp.getMonthSalary() - emp.getChildrenAmount() * 1000); // За каждого ребенка из зарплаты вычитается 1000
 
@@ -49,8 +54,8 @@ public class TaxPayment {
                 taxRate = 0.13;
             }
 
-            double tax = taxableSalary * taxRate;
-            taxPayments[i] = new TaxPayment(emp.getName(), tax);
+            double taxAmount = taxableSalary * taxRate;
+            taxPayments[i] = new TaxPayment(emp.getName(), taxAmount);
         }
 
         return taxPayments;

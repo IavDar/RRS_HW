@@ -1,6 +1,6 @@
 package Homework.Lesson10_getters_setters.Homework10;
 
-public class Manager extends Worker {
+public class Manager extends Employee {
     private int numberOfSubordinates;
 
     public Manager(double baseSalary) {
@@ -14,6 +14,13 @@ public class Manager extends Worker {
 
     public void setNumberOfSubordinates(int numberOfSubordinates) {
         this.numberOfSubordinates = numberOfSubordinates;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" + "Name= " + super.getName() +
+                " numberOfSubordinates=" + numberOfSubordinates +
+                '}';
     }
 
     @Override

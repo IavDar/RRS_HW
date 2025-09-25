@@ -14,7 +14,10 @@ package Homework.Lesson10_getters_setters.Homework10;
 public class Employee {
     private String name;
     private double baseSalary;
-    private double salary;
+
+    public Employee(double baseSalary){
+        this.baseSalary = baseSalary;
+    }
 
     public String getName() {
         return name;
@@ -24,15 +27,22 @@ public class Employee {
         return baseSalary;
     }
 
-    public double getSalary(){
-        return salary;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
     public void setBaseSalary(double baseSalary) {
         this.baseSalary = baseSalary;
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "name='" + name + '\'' + "Base Salary= " + baseSalary +
+                '}';
+    }
+
+    public double getSalary(){
+        return baseSalary;
     }
 }

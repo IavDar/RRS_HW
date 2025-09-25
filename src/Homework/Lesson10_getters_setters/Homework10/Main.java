@@ -21,13 +21,63 @@ public class Main {
 
         double baseSalary = 1000;
 
-        Manager manager = new Manager(baseSalary);
-        manager.setNumberOfSubordinates(10);
-        System.out.println("Manager:" + manager.getSalary());
+//        Manager manager = new Manager(baseSalary);
+//        manager.setNumberOfSubordinates(10);
+//        System.out.println("Manager:" + manager.getSalary());
+//
+//        Director director = new Director(baseSalary);
+//        director.setNumberOfSubordinates(10);
+//        System.out.println("Director:" + director.getSalary());
 
-        Director director = new Director(baseSalary);
-        director.setNumberOfSubordinates(10);
-        System.out.println("Director:" + director.getSalary());
+
+        // Массив сотрудников:
+
+        Employee[] employees = new Employee[3];
+
+        employees[0] = new Worker(baseSalary);
+        employees[0].setName("Иван");
+
+        employees[1] = new Manager(baseSalary);
+        employees[1].setName("Мария");
+        ((Manager) employees[1]).setNumberOfSubordinates(40);
+
+        employees[2] = new Director(baseSalary);
+        employees[2].setName("Виктор");
+        ((Director) employees[2]).setNumberOfSubordinates(60);
+
+//        System.out.println("зарплата" + employees[0].getSalary());
+//        System.out.println("зарплата " + employees[1].getSalary());
+//        System.out.println("зарплата " + employees[2].getSalary());
+
+
+        // Массив менеждеров:
+
+        Manager[] managers = new Manager[3];
+
+        managers[0] = new Manager(baseSalary);
+        managers[0].setName("Максим");
+        managers[0].setNumberOfSubordinates(15);
+
+        managers[1] = new Manager(baseSalary);
+        managers[1].setName("Ольга");
+        managers[1].setNumberOfSubordinates(35);
+
+
+
+        // Вызовы методов:
+
+        System.out.println("findByName: " + UtilSearch.findByName(employees, "иВан"));
+
+        UtilSearch.findByNameSubstring(employees, "МА");
+
+        System.out.println("SalaryBudget: " + UtilSearch.getSalaryBudget(employees));
+
+        System.out.println("minSalary: " + UtilSearch.minSalary(employees));
+
+        Employee employeeWithMaxSalary = UtilSearch.maxSalary(employees);
+
+        System.out.println("MaxSalary: " + employeeWithMaxSalary.getSalary() + " Employee: " + employeeWithMaxSalary);
+
     }
 }
 

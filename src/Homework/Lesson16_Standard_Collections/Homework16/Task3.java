@@ -6,9 +6,7 @@ import java.util.List;
 public class Task3 {
 
     /*Задача №3
-
     Удалить из листа, созданного в предыдущей задаче, все четные элементы.*/
-
     public static void main(String[] args) {
 
         List<Integer> numbers = new ArrayList<>();
@@ -19,11 +17,11 @@ public class Task3 {
 
         System.out.println(numbers);
 
-        for (int i = 0 ; i <= numbers.size() - 1; i++) {
+        for (int i = numbers.size() - 1; i >= 0; i--) {
             if (numbers.get(i) % 2 == 0) {
-               numbers.remove(i);
-           }
-       }
+                numbers.remove(i);
+            }
+        }
 
         System.out.println(numbers);
     }

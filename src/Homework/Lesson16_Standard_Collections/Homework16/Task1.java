@@ -36,5 +36,6 @@ public class Task1 {
         colours.removeIf(word -> word.toUpperCase().contains("L"));
 
         System.out.println(colours);
+
     }
 }
